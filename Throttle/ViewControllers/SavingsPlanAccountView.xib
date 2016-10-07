@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SavingsPlanAccountView" customModule="Throttle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggm-rg-vvG">
+                    <rect key="frame" x="0.0" y="0.0" width="348" height="60"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6c-FB-DPL">
+                    <rect key="frame" x="0.0" y="0.0" width="348" height="60"/>
+                    <color key="backgroundColor" red="0.0" green="0.74901960784313726" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JH1-fB-HzV">
+                    <rect key="frame" x="25" y="19" width="268" height="21"/>
+                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PvX-OW-LvT">
+                    <rect key="frame" x="303" y="20" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="fR2-9w-Tuc"/>
+                        <constraint firstAttribute="width" constant="20" id="sbn-Sa-Cn8"/>
+                    </constraints>
+                    <state key="normal" image="Phone"/>
+                    <connections>
+                        <action selector="callButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="69p-XU-oIa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.19215686274509802" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="JH1-fB-HzV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6Iu-q5-M4e"/>
+                <constraint firstAttribute="trailing" secondItem="PvX-OW-LvT" secondAttribute="trailing" constant="25" id="9V9-3j-Mgo"/>
+                <constraint firstItem="ggm-rg-vvG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AvN-OC-MnF"/>
+                <constraint firstAttribute="trailing" secondItem="B6c-FB-DPL" secondAttribute="trailing" id="HuO-v4-HQ6"/>
+                <constraint firstItem="PvX-OW-LvT" firstAttribute="leading" secondItem="JH1-fB-HzV" secondAttribute="trailing" constant="10" id="M03-Jh-5jw"/>
+                <constraint firstAttribute="bottom" secondItem="B6c-FB-DPL" secondAttribute="bottom" id="N25-Sc-iSK"/>
+                <constraint firstAttribute="trailing" secondItem="ggm-rg-vvG" secondAttribute="trailing" id="Pkg-Z1-Qr2"/>
+                <constraint firstItem="ggm-rg-vvG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="T1P-3s-K6F"/>
+                <constraint firstItem="JH1-fB-HzV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="djW-2d-UtM"/>
+                <constraint firstAttribute="bottom" secondItem="ggm-rg-vvG" secondAttribute="bottom" id="egb-gu-hrq"/>
+                <constraint firstItem="PvX-OW-LvT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kvp-jf-dxF"/>
+                <constraint firstItem="B6c-FB-DPL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rvy-Dj-Aed"/>
+                <constraint firstItem="B6c-FB-DPL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ujQ-eq-rnf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="accountNameLabel" destination="JH1-fB-HzV" id="xjk-sF-GzC"/>
+                <outlet property="backgroundColorShadeView" destination="B6c-FB-DPL" id="L0r-93-PR2"/>
+                <outlet property="callButton" destination="PvX-OW-LvT" id="3cV-Oh-Fco"/>
+                <outlet property="shadowView" destination="ggm-rg-vvG" id="QQH-LL-Ny1"/>
+            </connections>
+            <point key="canvasLocation" x="-24" y="5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Phone" width="24" height="24"/>
+    </resources>
+</document>

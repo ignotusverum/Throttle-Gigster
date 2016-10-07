@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10112" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditsNotSavedViewController" customModule="Throttle" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="uxq-F0-1mw" id="QZW-fD-RPk"/>
+                <outlet property="saveButton" destination="SGn-qr-0Na" id="VXN-cv-NcM"/>
+                <outlet property="subView" destination="OmF-Xn-LIu" id="0oa-EL-DI9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="center" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OmF-Xn-LIu">
+                    <rect key="frame" x="150" y="170" width="300" height="260"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-lg-edit" translatesAutoresizingMaskIntoConstraints="NO" id="604-Ah-azD">
+                            <rect key="frame" x="125" y="20" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="f0O-Gi-i89"/>
+                                <constraint firstAttribute="height" constant="50" id="sZj-Rd-LRp"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to proceed?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUs-PT-8st">
+                            <rect key="frame" x="20" y="145" width="260" height="20"/>
+                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Esl-wQ-wGx">
+                            <rect key="frame" x="20" y="185" width="260" height="2"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="1SE-Q6-IzF"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxq-F0-1mw">
+                            <rect key="frame" x="20" y="207" width="32" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="Yeu-ZE-zXG"/>
+                                <constraint firstAttribute="width" constant="32" id="sbb-r5-i4q"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="15"/>
+                            <state key="normal" title="Back">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="backButtonPressed:" destination="-1" eventType="touchUpInside" id="L95-bh-cX6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGn-qr-0Na">
+                            <rect key="frame" x="248" y="207" width="32" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="33" id="kOi-1M-H3W"/>
+                                <constraint firstAttribute="width" constant="32" id="tsK-gV-9Xy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="15"/>
+                            <state key="normal" title="Save">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="-1" eventType="touchUpInside" id="znB-BR-xhd"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Edits not saved!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HI-UG-3aq">
+                            <rect key="frame" x="20" y="86" width="260" height="47"/>
+                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.035294117649999998" green="0.2784313725" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="nUs-PT-8st" firstAttribute="leading" secondItem="OmF-Xn-LIu" secondAttribute="leading" constant="20" id="0hJ-f7-T5j"/>
+                        <constraint firstItem="uxq-F0-1mw" firstAttribute="leading" secondItem="OmF-Xn-LIu" secondAttribute="leading" constant="20" id="8Es-eN-3Mr"/>
+                        <constraint firstAttribute="trailing" secondItem="Esl-wQ-wGx" secondAttribute="trailing" constant="20" id="9iY-AY-Flz"/>
+                        <constraint firstAttribute="bottom" secondItem="SGn-qr-0Na" secondAttribute="bottom" constant="20" id="A8i-Hp-s7L"/>
+                        <constraint firstItem="SGn-qr-0Na" firstAttribute="top" secondItem="Esl-wQ-wGx" secondAttribute="bottom" constant="20" id="CHG-CP-Arr"/>
+                        <constraint firstItem="1HI-UG-3aq" firstAttribute="centerX" secondItem="OmF-Xn-LIu" secondAttribute="centerX" id="Cvo-tD-cnL"/>
+                        <constraint firstAttribute="height" constant="260" id="DZ3-3x-9kF"/>
+                        <constraint firstAttribute="bottom" secondItem="uxq-F0-1mw" secondAttribute="bottom" constant="20" id="EUp-Sg-DUu"/>
+                        <constraint firstAttribute="width" constant="300" id="FZN-Dn-5WA"/>
+                        <constraint firstItem="nUs-PT-8st" firstAttribute="top" secondItem="1HI-UG-3aq" secondAttribute="bottom" constant="12" id="LFO-BC-MEG"/>
+                        <constraint firstItem="604-Ah-azD" firstAttribute="top" secondItem="OmF-Xn-LIu" secondAttribute="top" constant="20" id="Mb7-OR-0fg"/>
+                        <constraint firstAttribute="trailing" secondItem="SGn-qr-0Na" secondAttribute="trailing" constant="20" id="NSb-yO-V0D"/>
+                        <constraint firstAttribute="trailing" secondItem="nUs-PT-8st" secondAttribute="trailing" constant="20" id="Qj9-gy-K0y"/>
+                        <constraint firstItem="Esl-wQ-wGx" firstAttribute="leading" secondItem="OmF-Xn-LIu" secondAttribute="leading" constant="20" id="a7N-WP-Ynw"/>
+                        <constraint firstItem="604-Ah-azD" firstAttribute="centerX" secondItem="OmF-Xn-LIu" secondAttribute="centerX" id="aAg-95-iRn"/>
+                        <constraint firstItem="Esl-wQ-wGx" firstAttribute="top" secondItem="nUs-PT-8st" secondAttribute="bottom" constant="20" id="avd-iW-Zz4"/>
+                        <constraint firstAttribute="trailing" secondItem="1HI-UG-3aq" secondAttribute="trailing" constant="20" id="fP1-mo-jeR"/>
+                        <constraint firstItem="1HI-UG-3aq" firstAttribute="leading" secondItem="OmF-Xn-LIu" secondAttribute="leading" constant="20" id="obe-WI-ghY"/>
+                        <constraint firstItem="SGn-qr-0Na" firstAttribute="centerY" secondItem="uxq-F0-1mw" secondAttribute="centerY" id="rrf-5a-p93"/>
+                        <constraint firstItem="nUs-PT-8st" firstAttribute="centerX" secondItem="OmF-Xn-LIu" secondAttribute="centerX" id="t8U-bY-xea"/>
+                        <constraint firstItem="Esl-wQ-wGx" firstAttribute="centerX" secondItem="OmF-Xn-LIu" secondAttribute="centerX" id="u7D-YY-Gfy"/>
+                        <constraint firstItem="1HI-UG-3aq" firstAttribute="top" secondItem="604-Ah-azD" secondAttribute="bottom" constant="16" id="vAY-c8-AnA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.78005640271086829" blue="1" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="OmF-Xn-LIu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="cKB-eF-B49"/>
+                <constraint firstItem="OmF-Xn-LIu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dl6-CV-ljr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="323" y="326"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-lg-edit" width="50" height="50"/>
+    </resources>
+</document>

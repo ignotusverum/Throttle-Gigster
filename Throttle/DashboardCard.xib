@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="KohinoorBangla.ttc">
+            <string>KohinoorBangla-Bold</string>
+            <string>KohinoorBangla-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DashboardCard" customModule="Throttle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="550"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMt-Se-aEt" userLabel="shadowView">
+                    <rect key="frame" x="30" y="12" width="301" height="523"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iub-e2-BBC">
+                    <rect key="frame" x="0.0" y="0.0" width="361" height="550"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark_card" translatesAutoresizingMaskIntoConstraints="NO" id="3yi-9b-JBW">
+                            <rect key="frame" x="10" y="10" width="341" height="530"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCo-lm-AZa">
+                            <rect key="frame" x="30" y="205" width="301" height="111"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Total Interest you owe on all of your accounts">
+                                    <attributes>
+                                        <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <font key="NSFont" size="31" name="KohinoorBangla-Light"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="0.84999999999999998" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$300.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUw-eF-Cet">
+                            <rect key="frame" x="30" y="316" width="301" height="39"/>
+                            <fontDescription key="fontDescription" name="KohinoorBangla-Bold" family="Kohinoor Bangla" pointSize="33"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$300.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjT-fX-3QL">
+                            <rect key="frame" x="25" y="10" width="316" height="69"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="kcd-mq-IbR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="KohinoorBangla-Bold" family="Kohinoor Bangla" pointSize="49"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="kcd-mq-IbR"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total Interest you owe on all of your accounts" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPH-XU-iId">
+                            <rect key="frame" x="25" y="77" width="316" height="20"/>
+                            <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.76470588240000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="wPH-XU-iId" firstAttribute="leading" secondItem="Iub-e2-BBC" secondAttribute="leading" constant="25" id="13F-1L-PEW"/>
+                        <constraint firstItem="hjT-fX-3QL" firstAttribute="leading" secondItem="Iub-e2-BBC" secondAttribute="leading" constant="25" id="9hH-ZE-LzR"/>
+                        <constraint firstItem="3yi-9b-JBW" firstAttribute="top" secondItem="Iub-e2-BBC" secondAttribute="top" constant="10" id="9uJ-MR-9yk"/>
+                        <constraint firstItem="NUw-eF-Cet" firstAttribute="leading" secondItem="Iub-e2-BBC" secondAttribute="leading" constant="30" id="C2k-W4-ePB"/>
+                        <constraint firstAttribute="trailing" secondItem="hjT-fX-3QL" secondAttribute="trailing" constant="20" id="Hno-gF-f5G"/>
+                        <constraint firstItem="NUw-eF-Cet" firstAttribute="top" secondItem="qCo-lm-AZa" secondAttribute="bottom" id="HrY-n8-PGe"/>
+                        <constraint firstItem="qCo-lm-AZa" firstAttribute="centerY" secondItem="Iub-e2-BBC" secondAttribute="centerY" constant="-15" id="MKq-sO-dXW"/>
+                        <constraint firstAttribute="trailing" secondItem="3yi-9b-JBW" secondAttribute="trailing" constant="10" id="NcR-he-lyw"/>
+                        <constraint firstItem="qCo-lm-AZa" firstAttribute="centerY" secondItem="Iub-e2-BBC" secondAttribute="centerY" id="OBt-u3-nXF"/>
+                        <constraint firstItem="qCo-lm-AZa" firstAttribute="leading" secondItem="Iub-e2-BBC" secondAttribute="leading" constant="30" id="OGP-DX-yXr"/>
+                        <constraint firstAttribute="bottom" secondItem="3yi-9b-JBW" secondAttribute="bottom" constant="10" id="Q3F-zS-Sqt"/>
+                        <constraint firstItem="hjT-fX-3QL" firstAttribute="top" secondItem="Iub-e2-BBC" secondAttribute="top" constant="10" id="Qd9-vx-yXZ"/>
+                        <constraint firstAttribute="trailing" secondItem="NUw-eF-Cet" secondAttribute="trailing" constant="30" id="RUE-g4-4W2"/>
+                        <constraint firstItem="wPH-XU-iId" firstAttribute="top" secondItem="hjT-fX-3QL" secondAttribute="bottom" constant="-2" id="TX9-4x-l5d"/>
+                        <constraint firstAttribute="trailing" secondItem="qCo-lm-AZa" secondAttribute="trailing" constant="30" id="fYP-Gx-qgV"/>
+                        <constraint firstAttribute="trailing" secondItem="wPH-XU-iId" secondAttribute="trailing" constant="20" id="jZa-H4-mPn"/>
+                        <constraint firstItem="3yi-9b-JBW" firstAttribute="leading" secondItem="Iub-e2-BBC" secondAttribute="leading" constant="10" id="zZI-3V-Zdr"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="OBt-u3-nXF"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fMt-Se-aEt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="1rI-Jx-J4X"/>
+                <constraint firstAttribute="trailing" secondItem="Iub-e2-BBC" secondAttribute="trailing" id="JBh-bo-Q6L"/>
+                <constraint firstItem="fMt-Se-aEt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="MrF-si-o8e"/>
+                <constraint firstAttribute="bottom" secondItem="Iub-e2-BBC" secondAttribute="bottom" id="QPz-7z-VFf"/>
+                <constraint firstAttribute="trailing" secondItem="fMt-Se-aEt" secondAttribute="trailing" constant="30" id="oJt-WX-eZU"/>
+                <constraint firstItem="Iub-e2-BBC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rMm-r5-Wvf"/>
+                <constraint firstAttribute="bottom" secondItem="fMt-Se-aEt" secondAttribute="bottom" constant="15" id="rsC-rB-Cu5"/>
+                <constraint firstItem="Iub-e2-BBC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yeF-Uf-aOm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="3yi-9b-JBW" id="NlC-8E-KXs"/>
+                <outlet property="cardBackgroundView" destination="Iub-e2-BBC" id="Res-7e-xaI"/>
+                <outlet property="collapsedDetailLabel" destination="wPH-XU-iId" id="Q3d-1Y-jVR"/>
+                <outlet property="collapsedTitleLabel" destination="hjT-fX-3QL" id="kri-kb-ozB"/>
+                <outlet property="shadowView" destination="fMt-Se-aEt" id="lyh-Kn-mUw"/>
+                <outlet property="titleLabel" destination="qCo-lm-AZa" id="YKM-7b-4oo"/>
+                <outlet property="titleLabelYConstraint" destination="MKq-sO-dXW" id="hdb-bb-SMI"/>
+                <outlet property="totalAmountLabel" destination="NUw-eF-Cet" id="M1A-pT-Lk7"/>
+            </connections>
+            <point key="canvasLocation" x="165.5" y="392"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dark_card" width="748" height="964"/>
+    </resources>
+</document>

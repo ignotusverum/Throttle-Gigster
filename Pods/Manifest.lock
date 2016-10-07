@@ -1,0 +1,126 @@
+PODS:
+  - Alamofire (3.5.0)
+  - AWSAutoScaling (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSCloudWatch (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSCognito (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSCore (2.4.9)
+  - AWSDynamoDB (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSEC2 (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSElasticLoadBalancing (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSIoT (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSKinesis (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSLambda (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSMachineLearning (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSMobileAnalytics (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSS3 (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSSES (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSSimpleDB (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSSNS (2.4.9):
+    - AWSCore (= 2.4.9)
+  - AWSSQS (2.4.9):
+    - AWSCore (= 2.4.9)
+  - Crashlytics (3.8.2):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.9)
+  - HexColors (2.3.0)
+  - ITRAirSideMenu (1.0.3)
+  - Locksmith (2.0.8)
+  - MBProgressHUD (1.0.0)
+  - Realm (2.0.1):
+    - Realm/Headers (= 2.0.1)
+  - Realm/Headers (2.0.1)
+  - RealmSwift (2.0.1):
+    - Realm (= 2.0.1)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SwiftyJSON (2.3.1)
+  - TSMessages (0.9.13):
+    - HexColors (~> 2.3.0)
+
+DEPENDENCIES:
+  - Alamofire (= 3.5.0)
+  - AWSAutoScaling
+  - AWSCloudWatch
+  - AWSCognito
+  - AWSCore
+  - AWSDynamoDB
+  - AWSEC2
+  - AWSElasticLoadBalancing
+  - AWSIoT
+  - AWSKinesis
+  - AWSLambda
+  - AWSMachineLearning
+  - AWSMobileAnalytics
+  - AWSS3
+  - AWSSES
+  - AWSSimpleDB
+  - AWSSNS
+  - AWSSQS
+  - Crashlytics
+  - Fabric
+  - ITRAirSideMenu (~> 1.0.3)
+  - Locksmith (= 2.0.8)
+  - MBProgressHUD
+  - RealmSwift
+  - SDWebImage
+  - SwiftyJSON (= 2.3.1)
+  - TSMessages (from `https://github.com/KrauseFx/TSMessages.git`)
+
+EXTERNAL SOURCES:
+  TSMessages:
+    :git: https://github.com/KrauseFx/TSMessages.git
+
+CHECKOUT OPTIONS:
+  TSMessages:
+    :commit: e63f23304f781dcadbac31e6d338f3105fb3cd78
+    :git: https://github.com/KrauseFx/TSMessages.git
+
+SPEC CHECKSUMS:
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
+  AWSAutoScaling: db455510604d311d56372f27216f12e5ca0d71d6
+  AWSCloudWatch: 43535be0a8dfe78b22ab53d626ca2135cc90788e
+  AWSCognito: 4fa9fefcadae1d8425b01cbde27d564c21e3fd35
+  AWSCore: 175208358b95492e0ebe0337df2ab415300bddac
+  AWSDynamoDB: ba9d90dd6d632197bf24baad824fa918568ba8e6
+  AWSEC2: 4ceee85ec34624e5ff4eeca4f3b6ed6e689ce30d
+  AWSElasticLoadBalancing: bc9800111813fc5a904e0ae570edd88b4d9825fe
+  AWSIoT: beb8c0284afc24a2ad6429e8b85df7664133760d
+  AWSKinesis: 3a1a27ff270fd4c83760e68889a8f53e49ce2c7e
+  AWSLambda: 5cfb825a83acbfd6b62a6cf109f9c73896f5cc7a
+  AWSMachineLearning: adaf463d7e243b411d352ddc326a63cab855319d
+  AWSMobileAnalytics: ff4619920aa962d6b3f89b5d2c780f9293605a35
+  AWSS3: e4959b48db48d5f3dcd5cdf9e24a07f60a313611
+  AWSSES: 6036226ee4c88cefeb7b70441a5021e229dd62ff
+  AWSSimpleDB: 9e2a1fac8d1df350408f323b9e32b51813aae67a
+  AWSSNS: 85513f30d76556ff43bc0772e65f1a74008a488f
+  AWSSQS: 1d1cb2e41bf0e303d15a3decb3a080782dacb9c8
+  Crashlytics: 27acca95a01b042a8294291dd6dff27f8f6af6d7
+  Fabric: bc5bec42cef4bcf1ee3ce0e218fc518e4b44dfbb
+  HexColors: 6ad3947c3447a055a3aa8efa859def096351fe5f
+  ITRAirSideMenu: e888f259559379bc73c7509f122119ab0f8b02a6
+  Locksmith: a8ed41ac4c06506ea8cb199d8ec8a8d3d108eb2a
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  Realm: 0557ee0e4ab4f0936c90e370056d1ed6265f93d6
+  RealmSwift: 64e00af79bdcd7d2a7a23fdc1cb3faf22b80ae4c
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SwiftyJSON: 592b53bee5ef3dd9b3bebc6b9cb7ee35426ae8c3
+  TSMessages: 6e403b790139636c15ab4f51946537095e03e79c
+
+PODFILE CHECKSUM: ce64e96c2a44cb2a0267a1ff1bb50079a2a68734
+
+COCOAPODS: 1.0.1

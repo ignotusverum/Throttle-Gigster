@@ -1,0 +1,1456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		574C8E508A7116D84DAC2A79 /* Pods_Throttle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E48DF232B00F3F41138677 /* Pods_Throttle.framework */; };
+		917EC7591D83505C003D00E5 /* UpdateMonthlyPaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917EC7581D83505C003D00E5 /* UpdateMonthlyPaymentService.swift */; };
+		917EC75B1D83506F003D00E5 /* GetMonthlyPaymentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917EC75A1D83506F003D00E5 /* GetMonthlyPaymentService.swift */; };
+		BC04E81A1C90EE6A0024BCC8 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC04E8191C90EE6A0024BCC8 /* CalendarViewController.swift */; };
+		BC090B491C8D3D7B000425BF /* AccountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC090B481C8D3D7B000425BF /* AccountDetailViewController.swift */; };
+		BC090B4B1C8D4248000425BF /* AccountsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC090B4A1C8D4248000425BF /* AccountsData.swift */; };
+		BC090B4D1C8D442F000425BF /* EditAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC090B4C1C8D442F000425BF /* EditAccountViewController.swift */; };
+		BC090B501C8D44DB000425BF /* EditDebtTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC090B4F1C8D44DB000425BF /* EditDebtTableViewCell.swift */; };
+		BC090B531C8D6A4E000425BF /* EditsNotSavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC090B511C8D6A4E000425BF /* EditsNotSavedViewController.swift */; };
+		BC090B541C8D6A4E000425BF /* EditsNotSavedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC090B521C8D6A4E000425BF /* EditsNotSavedViewController.xib */; };
+		BC129D191C83F8FD00BE82BC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC129D181C83F8FD00BE82BC /* AboutViewController.swift */; };
+		BC129D1C1C841B1B00BE82BC /* AccountSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC129D1B1C841B1B00BE82BC /* AccountSettingsViewController.swift */; };
+		BC129D1E1C84217400BE82BC /* ChangeEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC129D1D1C84217400BE82BC /* ChangeEmailViewController.swift */; };
+		BC38A7A11C8E0E7F0081FBE2 /* DeleteAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC38A7A01C8E0E7F0081FBE2 /* DeleteAccountViewController.xib */; };
+		BC38A7A31C8E0E8C0081FBE2 /* DeleteAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC38A7A21C8E0E8C0081FBE2 /* DeleteAccountViewController.swift */; };
+		BC4B79801CCF2E7600F620C0 /* UpdateAccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B797F1CCF2E7600F620C0 /* UpdateAccountService.swift */; };
+		BC4B79821CCF48AF00F620C0 /* DeleteAccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4B79811CCF48AF00F620C0 /* DeleteAccountService.swift */; };
+		BC5688081C9CE44200ADEF3E /* ChangePasswordResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5688071C9CE44200ADEF3E /* ChangePasswordResult.swift */; };
+		BC5BE5E81C8A17E8004E5490 /* Secondary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5BE5E71C8A17E8004E5490 /* Secondary.storyboard */; };
+		BC5BE5EA1C8A195E004E5490 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5BE5E91C8A195E004E5490 /* AccountsViewController.swift */; };
+		BC5BE5EC1C8A20A5004E5490 /* DebtsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5BE5EB1C8A20A5004E5490 /* DebtsTableViewCell.swift */; };
+		BC6EA7191CBC2A9A00EF273A /* AWSCognito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6EA7181CBC2A9A00EF273A /* AWSCognito.framework */; };
+		BC8FF32E1C85106D008F6AFA /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8FF32D1C85106D008F6AFA /* ChangePasswordViewController.swift */; };
+		BC8FF3301C851D73008F6AFA /* ChangeEmailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8FF32F1C851D73008F6AFA /* ChangeEmailService.swift */; };
+		BC8FF3321C851D80008F6AFA /* ChangePasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8FF3311C851D80008F6AFA /* ChangePasswordService.swift */; };
+		BCA0A8101C92020E00335114 /* MonthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA0A80F1C92020E00335114 /* MonthCollectionViewCell.swift */; };
+		BCA659EE1CBF1A9100A3F7C5 /* NotificationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA659ED1CBF1A9100A3F7C5 /* NotificationsService.swift */; };
+		BCAC864C1CA745C90080B6FB /* ChangeEmailServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAC864B1CA745C90080B6FB /* ChangeEmailServiceTest.swift */; };
+		BCAC86501CA753AA0080B6FB /* ChangePasswordServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAC864F1CA753AA0080B6FB /* ChangePasswordServiceTest.swift */; };
+		BCC7D4011C9FB22500174929 /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC7D4001C9FB22500174929 /* SettingsService.swift */; };
+		BCC7D4031C9FB3A400174929 /* TouchIDTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC7D4021C9FB3A400174929 /* TouchIDTableViewController.swift */; };
+		BCC7D4051C9FB6C200174929 /* TouchIDSettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC7D4041C9FB6C200174929 /* TouchIDSettingTableViewCell.swift */; };
+		BCCE32D31C852EF70026906F /* SettingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE32D21C852EF70026906F /* SettingsData.swift */; };
+		BCCE32D51C8530CB0026906F /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE32D41C8530CB0026906F /* NotificationsViewController.swift */; };
+		BCCE32D91C856BBC0026906F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCE32D81C856BBC0026906F /* MessageUI.framework */; };
+		D008777C1CB59194007CB23F /* SaveRefreshDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008777B1CB59194007CB23F /* SaveRefreshDataService.swift */; };
+		D008777E1CB59F29007CB23F /* AddManualBankService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008777D1CB59F29007CB23F /* AddManualBankService.swift */; };
+		D00877801CB59F88007CB23F /* AddManualBankResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D008777F1CB59F88007CB23F /* AddManualBankResult.swift */; };
+		D00D51C81CA063A3008EEAB4 /* WelcomePlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00D51C71CA063A3008EEAB4 /* WelcomePlusButton.swift */; };
+		D01061D31CDA5CAC00EB7DD8 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01061D21CDA5CAC00EB7DD8 /* InformationViewController.swift */; };
+		D01F2F0A1CA2E67A006DF67D /* LoginServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F2F091CA2E67A006DF67D /* LoginServiceTest.swift */; };
+		D01F2F0C1CA2EA8C006DF67D /* ForgotPasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F2F0B1CA2EA8C006DF67D /* ForgotPasswordService.swift */; };
+		D01F2F0E1CA2EBB1006DF67D /* ForgotPasswordServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F2F0D1CA2EBB1006DF67D /* ForgotPasswordServiceTest.swift */; };
+		D01F2F101CA30519006DF67D /* CheckBankLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F2F0F1CA30519006DF67D /* CheckBankLoginService.swift */; };
+		D01F2F121CA30697006DF67D /* CheckBankLoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F2F111CA30697006DF67D /* CheckBankLoginResult.swift */; };
+		D01F2F141CA3081C006DF67D /* CheckBankLoginServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F2F131CA3081C006DF67D /* CheckBankLoginServiceTest.swift */; };
+		D01F2F161CA30B61006DF67D /* GetLastRefreshInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F2F151CA30B61006DF67D /* GetLastRefreshInfoService.swift */; };
+		D01F2F181CA30BC7006DF67D /* GetLastRefreshInfoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01F2F171CA30BC7006DF67D /* GetLastRefreshInfoResult.swift */; };
+		D0300A511CAF14070056A7DD /* GetBankLoginFormService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0300A501CAF14070056A7DD /* GetBankLoginFormService.swift */; };
+		D0300A531CAF14800056A7DD /* GetBankLoginFormResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0300A521CAF14800056A7DD /* GetBankLoginFormResult.swift */; };
+		D0300A561CAF153D0056A7DD /* GetBankLoginFormServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0300A551CAF153D0056A7DD /* GetBankLoginFormServiceTest.swift */; };
+		D034B4211C74FA9B006C807C /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034B4201C74FA9B006C807C /* ForgotPasswordViewController.swift */; };
+		D034B4231C7502E8006C807C /* ForgotPasswordCheckEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D034B4221C7502E8006C807C /* ForgotPasswordCheckEmailViewController.swift */; };
+		D037C6CB1CCDB5FA0050A372 /* ImprovePlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037C6CA1CCDB5FA0050A372 /* ImprovePlanViewController.swift */; };
+		D037C6CE1CCDC1E70050A372 /* SavingsPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037C6CD1CCDC1E70050A372 /* SavingsPlanViewController.swift */; };
+		D037C6D01CCDCD2D0050A372 /* SavingsPlanAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D037C6CF1CCDCD2D0050A372 /* SavingsPlanAccountView.xib */; };
+		D037C6D21CCDCF240050A372 /* SavingsPlanAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037C6D11CCDCF240050A372 /* SavingsPlanAccountView.swift */; };
+		D037C6D41CCE8C750050A372 /* SnowballAvalancheCalculationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037C6D31CCE8C750050A372 /* SnowballAvalancheCalculationService.swift */; };
+		D037C6D81CCE8F400050A372 /* SnowballAvalancheCalculationServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037C6D71CCE8F400050A372 /* SnowballAvalancheCalculationServiceTest.swift */; };
+		D037C6DA1CCE94FC0050A372 /* NSUserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037C6D91CCE94FC0050A372 /* NSUserDefaultExtension.swift */; };
+		D037C6DC1CCE9B090050A372 /* SnowballAvalancheCalculationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037C6DB1CCE9B090050A372 /* SnowballAvalancheCalculationResult.swift */; };
+		D037C6DE1CCE9C310050A372 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037C6DD1CCE9C310050A372 /* NSDateExtension.swift */; };
+		D037C6E01CCEA4C40050A372 /* GetLoanAndCreditAccountsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037C6DF1CCEA4C40050A372 /* GetLoanAndCreditAccountsService.swift */; };
+		D037C6E21CCEA5310050A372 /* GetLoansAndCreditAccountsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037C6E11CCEA5310050A372 /* GetLoansAndCreditAccountsResult.swift */; };
+		D03CC0371C7E9CE600A045A4 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03CC0361C7E9CE600A045A4 /* BaseService.swift */; };
+		D03CC03A1C7E9F3B00A045A4 /* BaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03CC0391C7E9F3B00A045A4 /* BaseResult.swift */; };
+		D03CC03C1C7E9F9800A045A4 /* LoginIntoBankResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03CC03B1C7E9F9800A045A4 /* LoginIntoBankResult.swift */; };
+		D03CC03E1C7F5B6C00A045A4 /* AuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03CC03D1C7F5B6C00A045A4 /* AuthProtocol.swift */; };
+		D03CC0401C7F6DA900A045A4 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03CC03F1C7F6DA900A045A4 /* Settings.storyboard */; };
+		D03CC0431C7F6ED200A045A4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03CC0421C7F6ED200A045A4 /* SettingsViewController.swift */; };
+		D03CC0451C7F708900A045A4 /* StoryboardUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03CC0441C7F708900A045A4 /* StoryboardUtil.swift */; };
+		D05176551C9F1C8D00419291 /* LogIntoBankServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05176541C9F1C8D00419291 /* LogIntoBankServiceTest.swift */; };
+		D05176581C9F1D3D00419291 /* MockedAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05176571C9F1D3D00419291 /* MockedAuth.swift */; };
+		D051765C1C9F442000419291 /* RealmUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051765B1C9F442000419291 /* RealmUtil.swift */; };
+		D072123B1C74325E003A7694 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D072123A1C74325E003A7694 /* Podfile */; };
+		D072123D1C74D8EC003A7694 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D072123C1C74D8EC003A7694 /* Config.swift */; };
+		D07212401C74EB08003A7694 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D072123F1C74EB08003A7694 /* CommonButton.swift */; };
+		D084A19C1C79158A00496575 /* LogoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D084A19B1C79158A00496575 /* LogoutService.swift */; };
+		D08562811C9F9FAF008CD77F /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D08562801C9F9FAF008CD77F /* LocalAuthentication.framework */; };
+		D08562831C9FA2E3008CD77F /* TouchIDAuthenticationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08562821C9FA2E3008CD77F /* TouchIDAuthenticationUtil.swift */; };
+		D08562851C9FAD59008CD77F /* AuthenticatedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08562841C9FAD59008CD77F /* AuthenticatedUser.swift */; };
+		D08B9A881CB565CE00E58120 /* SendSecurityQuestionAnswersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B9A871CB565CE00E58120 /* SendSecurityQuestionAnswersService.swift */; };
+		D08B9A8A1CB5667100E58120 /* SendBankSecurityQuestionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08B9A891CB5667100E58120 /* SendBankSecurityQuestionResult.swift */; };
+		D0C02D1F1C765A5500765814 /* CustomHomeCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C02D1E1C765A5500765814 /* CustomHomeCollectionViewFlowLayout.swift */; };
+		D0C02D211C7683F400765814 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C02D201C7683F400765814 /* BaseViewController.swift */; };
+		D0C02D231C76A53D00765814 /* LoginIntoBankService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C02D221C76A53D00765814 /* LoginIntoBankService.swift */; };
+		D0C02D251C76B83900765814 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C02D241C76B83900765814 /* Auth.swift */; };
+		D0C02D271C76CAE900765814 /* ITRLeftMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C02D261C76CAE900765814 /* ITRLeftMenuController.swift */; };
+		D0DEDBA21C97454000E600DE /* UserAccountEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DEDBA11C97454000E600DE /* UserAccountEntity.swift */; };
+		D0DEDBA41C975F1C00E600DE /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DEDBA31C975F1C00E600DE /* IntExtension.swift */; };
+		D0DEDBA71C97692600E600DE /* DashboardCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0DEDBA61C97692600E600DE /* DashboardCard.xib */; };
+		D0DEDBA91C97694D00E600DE /* DashboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DEDBA81C97694D00E600DE /* DashboardCard.swift */; };
+		D0EA24471C8D04D9007C1D3E /* ManualLoanInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EA24461C8D04D9007C1D3E /* ManualLoanInfo.swift */; };
+		D0F0EA771CA5812000096417 /* LogIntoBankAndKeepCheckingBankLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F0EA761CA5812000096417 /* LogIntoBankAndKeepCheckingBankLoginService.swift */; };
+		D0F0EA791CA581A400096417 /* KeepCheckingBankLoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F0EA781CA581A400096417 /* KeepCheckingBankLoginResult.swift */; };
+		D0F0EA7B1CA5A30100096417 /* RefreshAllAccountDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F0EA7A1CA5A30100096417 /* RefreshAllAccountDataService.swift */; };
+		D0F0EA7D1CA5A37900096417 /* RefreshAllAccountDataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F0EA7C1CA5A37900096417 /* RefreshAllAccountDataResult.swift */; };
+		D0F0EA7F1CA5A5DD00096417 /* RefreshAllAccountDataServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F0EA7E1CA5A5DD00096417 /* RefreshAllAccountDataServiceTest.swift */; };
+		D0F0EA821CA5A69400096417 /* LoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F0EA811CA5A69400096417 /* LoginHelper.swift */; };
+		D0F982121C80D7D8009712D1 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F982111C80D7D8009712D1 /* Theme.swift */; };
+		D0FC0B6D1CFE26D800000239 /* GetAccountDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FC0B6C1CFE26D800000239 /* GetAccountDetailsService.swift */; };
+		F419F0551C08003900B9B28B /* BankSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F419F0541C08003900B9B28B /* BankSearchViewController.swift */; };
+		F419F0571C0802F400B9B28B /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = F419F0561C0802F400B9B28B /* Bank.swift */; };
+		F419F0591C080CCB00B9B28B /* KohinoorBangla.ttc in Resources */ = {isa = PBXBuildFile; fileRef = F419F0581C080CCB00B9B28B /* KohinoorBangla.ttc */; };
+		F424783E1C1FBBFD00910400 /* BankLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F424783D1C1FBBFD00910400 /* BankLoginViewController.swift */; };
+		F42478401C1FD1BB00910400 /* SecurityQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F424783F1C1FD1BB00910400 /* SecurityQuestionViewController.swift */; };
+		F43F20C61C0413450080BA80 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F20C51C0413450080BA80 /* WelcomeViewController.swift */; };
+		F43F20C91C04167B0080BA80 /* NSError+Domains.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43F20C81C04167B0080BA80 /* NSError+Domains.swift */; };
+		F45C05541C0B751900287C57 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45C05531C0B751900287C57 /* Utils.swift */; };
+		F45C055D1C0BEAF000287C57 /* BankSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45C055C1C0BEAF000287C57 /* BankSearchCollectionViewCell.swift */; };
+		F46475071C383BEA005C31B6 /* ConfirmAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46475061C383BEA005C31B6 /* ConfirmAccountViewController.swift */; };
+		F46475091C38465B005C31B6 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46475081C38465B005C31B6 /* AppData.swift */; };
+		F464750B1C397FC7005C31B6 /* WrongAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464750A1C397FC7005C31B6 /* WrongAnswerViewController.swift */; };
+		F464750D1C3980C2005C31B6 /* SomethingWrongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F464750C1C3980C2005C31B6 /* SomethingWrongViewController.swift */; };
+		F46475111C398B1C005C31B6 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46475101C398B1C005C31B6 /* SuccessViewController.swift */; };
+		F4A986221C399693001C4AB0 /* AwesomenessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A986211C399693001C4AB0 /* AwesomenessTableViewCell.swift */; };
+		F4AA4C4D1C016685001A5C96 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AA4C4C1C016685001A5C96 /* SignUpViewController.swift */; };
+		F4AA4C561C017BCD001A5C96 /* ThrottleCommunicationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AA4C551C017BCD001A5C96 /* ThrottleCommunicationsManager.swift */; };
+		F4AD06701C25D6E300A50699 /* ChooseAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AD066F1C25D6E300A50699 /* ChooseAccountViewController.swift */; };
+		F4AD06721C25DAEB00A50699 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AD06711C25DAEB00A50699 /* Account.swift */; };
+		F4AD06741C25E17A00A50699 /* AddManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AD06731C25E17A00A50699 /* AddManualViewController.swift */; };
+		F4AD06761C262A9B00A50699 /* AlmostThereViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AD06751C262A9B00A50699 /* AlmostThereViewController.swift */; };
+		F4FE6B541C0213F6001F96B6 /* ThrottleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE6B531C0213F6001F96B6 /* ThrottleUser.swift */; };
+		F4FE6B571C021668001F96B6 /* ThrottleParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FE6B561C021668001F96B6 /* ThrottleParser.swift */; };
+		FAA8F6381C000F48009DC774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F6371C000F48009DC774 /* AppDelegate.swift */; };
+		FAA8F63D1C000F48009DC774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA8F63B1C000F48009DC774 /* Main.storyboard */; };
+		FAA8F63F1C000F48009DC774 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA8F63E1C000F48009DC774 /* Assets.xcassets */; };
+		FAA8F6421C000F48009DC774 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAA8F6401C000F48009DC774 /* LaunchScreen.storyboard */; };
+		FAA8F64D1C000F49009DC774 /* ThrottleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F64C1C000F49009DC774 /* ThrottleTests.swift */; };
+		FAA8F6581C000F49009DC774 /* ThrottleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F6571C000F49009DC774 /* ThrottleUITests.swift */; };
+		FAA8F66D1C000FEE009DC774 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F6681C000FEE009DC774 /* SignInViewController.swift */; };
+		FAA8F66E1C000FEE009DC774 /* TutorialPageOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F6691C000FEE009DC774 /* TutorialPageOneViewController.swift */; };
+		FAA8F66F1C000FEE009DC774 /* TutorialPageThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F66A1C000FEE009DC774 /* TutorialPageThreeViewController.swift */; };
+		FAA8F6701C000FEE009DC774 /* TutorialPageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F66B1C000FEE009DC774 /* TutorialPageTwoViewController.swift */; };
+		FAA8F6711C000FEE009DC774 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA8F66C1C000FEE009DC774 /* TutorialViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAA8F6491C000F49009DC774 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA8F62C1C000F48009DC774 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA8F6331C000F48009DC774;
+			remoteInfo = Throttle;
+		};
+		FAA8F6541C000F49009DC774 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAA8F62C1C000F48009DC774 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAA8F6331C000F48009DC774;
+			remoteInfo = Throttle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2433903C6643D358BFA27288 /* Pods-Throttle.debug gigster.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Throttle.debug gigster.xcconfig"; path = "Pods/Target Support Files/Pods-Throttle/Pods-Throttle.debug gigster.xcconfig"; sourceTree = "<group>"; };
+		4A5ED78E532F0526DA61126C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		917EC7581D83505C003D00E5 /* UpdateMonthlyPaymentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateMonthlyPaymentService.swift; sourceTree = "<group>"; };
+		917EC75A1D83506F003D00E5 /* GetMonthlyPaymentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMonthlyPaymentService.swift; sourceTree = "<group>"; };
+		975364DF6116F33ABFFA3080 /* Pods-Throttle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Throttle.release.xcconfig"; path = "Pods/Target Support Files/Pods-Throttle/Pods-Throttle.release.xcconfig"; sourceTree = "<group>"; };
+		A1E48DF232B00F3F41138677 /* Pods_Throttle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Throttle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5829EA064E3946D60FCFDC7 /* Pods-Throttle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Throttle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Throttle/Pods-Throttle.debug.xcconfig"; sourceTree = "<group>"; };
+		BC04E8191C90EE6A0024BCC8 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		BC090B481C8D3D7B000425BF /* AccountDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDetailViewController.swift; sourceTree = "<group>"; };
+		BC090B4A1C8D4248000425BF /* AccountsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsData.swift; sourceTree = "<group>"; };
+		BC090B4C1C8D442F000425BF /* EditAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditAccountViewController.swift; sourceTree = "<group>"; };
+		BC090B4F1C8D44DB000425BF /* EditDebtTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDebtTableViewCell.swift; sourceTree = "<group>"; };
+		BC090B511C8D6A4E000425BF /* EditsNotSavedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditsNotSavedViewController.swift; sourceTree = "<group>"; };
+		BC090B521C8D6A4E000425BF /* EditsNotSavedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditsNotSavedViewController.xib; sourceTree = "<group>"; };
+		BC129D181C83F8FD00BE82BC /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		BC129D1B1C841B1B00BE82BC /* AccountSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountSettingsViewController.swift; sourceTree = "<group>"; };
+		BC129D1D1C84217400BE82BC /* ChangeEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewController.swift; sourceTree = "<group>"; };
+		BC38A7A01C8E0E7F0081FBE2 /* DeleteAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeleteAccountViewController.xib; sourceTree = "<group>"; };
+		BC38A7A21C8E0E8C0081FBE2 /* DeleteAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAccountViewController.swift; sourceTree = "<group>"; };
+		BC4B797F1CCF2E7600F620C0 /* UpdateAccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateAccountService.swift; sourceTree = "<group>"; };
+		BC4B79811CCF48AF00F620C0 /* DeleteAccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteAccountService.swift; sourceTree = "<group>"; };
+		BC5688071C9CE44200ADEF3E /* ChangePasswordResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangePasswordResult.swift; path = Throttle/Managers/ChangePasswordResult.swift; sourceTree = "<group>"; };
+		BC5BE5E71C8A17E8004E5490 /* Secondary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Secondary.storyboard; path = ../Secondary.storyboard; sourceTree = "<group>"; };
+		BC5BE5E91C8A195E004E5490 /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		BC5BE5EB1C8A20A5004E5490 /* DebtsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtsTableViewCell.swift; sourceTree = "<group>"; };
+		BC6EA7181CBC2A9A00EF273A /* AWSCognito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCognito.framework; path = "Pods/../build/Debug-iphoneos/AWSCognito.framework"; sourceTree = "<group>"; };
+		BC6EA71B1CBC2BB900EF273A /* Throttle-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Throttle-Bridging-Header.h"; sourceTree = "<group>"; };
+		BC8FF32D1C85106D008F6AFA /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		BC8FF32F1C851D73008F6AFA /* ChangeEmailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeEmailService.swift; sourceTree = "<group>"; };
+		BC8FF3311C851D80008F6AFA /* ChangePasswordService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordService.swift; sourceTree = "<group>"; };
+		BCA0A80F1C92020E00335114 /* MonthCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthCollectionViewCell.swift; sourceTree = "<group>"; };
+		BCA659ED1CBF1A9100A3F7C5 /* NotificationsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsService.swift; sourceTree = "<group>"; };
+		BCAC864B1CA745C90080B6FB /* ChangeEmailServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeEmailServiceTest.swift; sourceTree = "<group>"; };
+		BCAC864F1CA753AA0080B6FB /* ChangePasswordServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordServiceTest.swift; sourceTree = "<group>"; };
+		BCC7D4001C9FB22500174929 /* SettingsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsService.swift; path = Throttle/SettingsService.swift; sourceTree = SOURCE_ROOT; };
+		BCC7D4021C9FB3A400174929 /* TouchIDTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDTableViewController.swift; sourceTree = "<group>"; };
+		BCC7D4041C9FB6C200174929 /* TouchIDSettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDSettingTableViewCell.swift; sourceTree = "<group>"; };
+		BCCE32D21C852EF70026906F /* SettingsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsData.swift; sourceTree = "<group>"; };
+		BCCE32D41C8530CB0026906F /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		BCCE32D81C856BBC0026906F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D008777B1CB59194007CB23F /* SaveRefreshDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveRefreshDataService.swift; sourceTree = "<group>"; };
+		D008777D1CB59F29007CB23F /* AddManualBankService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddManualBankService.swift; sourceTree = "<group>"; };
+		D008777F1CB59F88007CB23F /* AddManualBankResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddManualBankResult.swift; sourceTree = "<group>"; };
+		D00D51C71CA063A3008EEAB4 /* WelcomePlusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomePlusButton.swift; sourceTree = "<group>"; };
+		D01061D21CDA5CAC00EB7DD8 /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		D01F2F091CA2E67A006DF67D /* LoginServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceTest.swift; sourceTree = "<group>"; };
+		D01F2F0B1CA2EA8C006DF67D /* ForgotPasswordService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordService.swift; sourceTree = "<group>"; };
+		D01F2F0D1CA2EBB1006DF67D /* ForgotPasswordServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordServiceTest.swift; sourceTree = "<group>"; };
+		D01F2F0F1CA30519006DF67D /* CheckBankLoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBankLoginService.swift; sourceTree = "<group>"; };
+		D01F2F111CA30697006DF67D /* CheckBankLoginResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBankLoginResult.swift; sourceTree = "<group>"; };
+		D01F2F131CA3081C006DF67D /* CheckBankLoginServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBankLoginServiceTest.swift; sourceTree = "<group>"; };
+		D01F2F151CA30B61006DF67D /* GetLastRefreshInfoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetLastRefreshInfoService.swift; sourceTree = "<group>"; };
+		D01F2F171CA30BC7006DF67D /* GetLastRefreshInfoResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetLastRefreshInfoResult.swift; sourceTree = "<group>"; };
+		D0300A501CAF14070056A7DD /* GetBankLoginFormService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBankLoginFormService.swift; sourceTree = "<group>"; };
+		D0300A521CAF14800056A7DD /* GetBankLoginFormResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBankLoginFormResult.swift; sourceTree = "<group>"; };
+		D0300A551CAF153D0056A7DD /* GetBankLoginFormServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetBankLoginFormServiceTest.swift; sourceTree = "<group>"; };
+		D034B4201C74FA9B006C807C /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		D034B4221C7502E8006C807C /* ForgotPasswordCheckEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordCheckEmailViewController.swift; sourceTree = "<group>"; };
+		D037C6CA1CCDB5FA0050A372 /* ImprovePlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImprovePlanViewController.swift; sourceTree = "<group>"; };
+		D037C6CD1CCDC1E70050A372 /* SavingsPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingsPlanViewController.swift; sourceTree = "<group>"; };
+		D037C6CF1CCDCD2D0050A372 /* SavingsPlanAccountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavingsPlanAccountView.xib; sourceTree = "<group>"; };
+		D037C6D11CCDCF240050A372 /* SavingsPlanAccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingsPlanAccountView.swift; sourceTree = "<group>"; };
+		D037C6D31CCE8C750050A372 /* SnowballAvalancheCalculationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowballAvalancheCalculationService.swift; sourceTree = "<group>"; };
+		D037C6D71CCE8F400050A372 /* SnowballAvalancheCalculationServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowballAvalancheCalculationServiceTest.swift; sourceTree = "<group>"; };
+		D037C6D91CCE94FC0050A372 /* NSUserDefaultExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultExtension.swift; sourceTree = "<group>"; };
+		D037C6DB1CCE9B090050A372 /* SnowballAvalancheCalculationResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowballAvalancheCalculationResult.swift; sourceTree = "<group>"; };
+		D037C6DD1CCE9C310050A372 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtension.swift; sourceTree = "<group>"; };
+		D037C6DF1CCEA4C40050A372 /* GetLoanAndCreditAccountsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetLoanAndCreditAccountsService.swift; sourceTree = "<group>"; };
+		D037C6E11CCEA5310050A372 /* GetLoansAndCreditAccountsResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetLoansAndCreditAccountsResult.swift; sourceTree = "<group>"; };
+		D03CC0361C7E9CE600A045A4 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		D03CC0391C7E9F3B00A045A4 /* BaseResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResult.swift; sourceTree = "<group>"; };
+		D03CC03B1C7E9F9800A045A4 /* LoginIntoBankResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginIntoBankResult.swift; sourceTree = "<group>"; };
+		D03CC03D1C7F5B6C00A045A4 /* AuthProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthProtocol.swift; sourceTree = "<group>"; };
+		D03CC03F1C7F6DA900A045A4 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Settings.storyboard; path = ../Settings.storyboard; sourceTree = "<group>"; };
+		D03CC0421C7F6ED200A045A4 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D03CC0441C7F708900A045A4 /* StoryboardUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardUtil.swift; sourceTree = "<group>"; };
+		D05176541C9F1C8D00419291 /* LogIntoBankServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogIntoBankServiceTest.swift; sourceTree = "<group>"; };
+		D05176571C9F1D3D00419291 /* MockedAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockedAuth.swift; sourceTree = "<group>"; };
+		D051765B1C9F442000419291 /* RealmUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmUtil.swift; path = Extensions/RealmUtil.swift; sourceTree = "<group>"; };
+		D072123A1C74325E003A7694 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D072123C1C74D8EC003A7694 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		D072123F1C74EB08003A7694 /* CommonButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
+		D084A19B1C79158A00496575 /* LogoutService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutService.swift; sourceTree = "<group>"; };
+		D08562801C9F9FAF008CD77F /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		D08562821C9FA2E3008CD77F /* TouchIDAuthenticationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDAuthenticationUtil.swift; sourceTree = "<group>"; };
+		D08562841C9FAD59008CD77F /* AuthenticatedUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatedUser.swift; sourceTree = "<group>"; };
+		D08B9A871CB565CE00E58120 /* SendSecurityQuestionAnswersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSecurityQuestionAnswersService.swift; sourceTree = "<group>"; };
+		D08B9A891CB5667100E58120 /* SendBankSecurityQuestionResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendBankSecurityQuestionResult.swift; sourceTree = "<group>"; };
+		D0C02D1E1C765A5500765814 /* CustomHomeCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHomeCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		D0C02D201C7683F400765814 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D0C02D221C76A53D00765814 /* LoginIntoBankService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginIntoBankService.swift; sourceTree = "<group>"; };
+		D0C02D241C76B83900765814 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		D0C02D261C76CAE900765814 /* ITRLeftMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITRLeftMenuController.swift; sourceTree = "<group>"; };
+		D0DEDBA11C97454000E600DE /* UserAccountEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountEntity.swift; sourceTree = "<group>"; };
+		D0DEDBA31C975F1C00E600DE /* IntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		D0DEDBA61C97692600E600DE /* DashboardCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardCard.xib; sourceTree = "<group>"; };
+		D0DEDBA81C97694D00E600DE /* DashboardCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCard.swift; sourceTree = "<group>"; };
+		D0EA24461C8D04D9007C1D3E /* ManualLoanInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualLoanInfo.swift; sourceTree = "<group>"; };
+		D0F0EA761CA5812000096417 /* LogIntoBankAndKeepCheckingBankLoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogIntoBankAndKeepCheckingBankLoginService.swift; sourceTree = "<group>"; };
+		D0F0EA781CA581A400096417 /* KeepCheckingBankLoginResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeepCheckingBankLoginResult.swift; sourceTree = "<group>"; };
+		D0F0EA7A1CA5A30100096417 /* RefreshAllAccountDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshAllAccountDataService.swift; sourceTree = "<group>"; };
+		D0F0EA7C1CA5A37900096417 /* RefreshAllAccountDataResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshAllAccountDataResult.swift; sourceTree = "<group>"; };
+		D0F0EA7E1CA5A5DD00096417 /* RefreshAllAccountDataServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshAllAccountDataServiceTest.swift; sourceTree = "<group>"; };
+		D0F0EA811CA5A69400096417 /* LoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginHelper.swift; sourceTree = "<group>"; };
+		D0F982111C80D7D8009712D1 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D0FC0B6C1CFE26D800000239 /* GetAccountDetailsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAccountDetailsService.swift; sourceTree = "<group>"; };
+		F419F0541C08003900B9B28B /* BankSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankSearchViewController.swift; sourceTree = "<group>"; };
+		F419F0561C0802F400B9B28B /* Bank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		F419F0581C080CCB00B9B28B /* KohinoorBangla.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = KohinoorBangla.ttc; sourceTree = "<group>"; };
+		F424783D1C1FBBFD00910400 /* BankLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankLoginViewController.swift; sourceTree = "<group>"; };
+		F424783F1C1FD1BB00910400 /* SecurityQuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecurityQuestionViewController.swift; sourceTree = "<group>"; };
+		F43F20C51C0413450080BA80 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F43F20C81C04167B0080BA80 /* NSError+Domains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Domains.swift"; sourceTree = "<group>"; };
+		F45C05531C0B751900287C57 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F45C055C1C0BEAF000287C57 /* BankSearchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		F46475061C383BEA005C31B6 /* ConfirmAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmAccountViewController.swift; sourceTree = "<group>"; };
+		F46475081C38465B005C31B6 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		F464750A1C397FC7005C31B6 /* WrongAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrongAnswerViewController.swift; sourceTree = "<group>"; };
+		F464750C1C3980C2005C31B6 /* SomethingWrongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomethingWrongViewController.swift; sourceTree = "<group>"; };
+		F46475101C398B1C005C31B6 /* SuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		F4A986211C399693001C4AB0 /* AwesomenessTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomenessTableViewCell.swift; sourceTree = "<group>"; };
+		F4AA4C4C1C016685001A5C96 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F4AA4C551C017BCD001A5C96 /* ThrottleCommunicationsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrottleCommunicationsManager.swift; sourceTree = "<group>"; };
+		F4AD066F1C25D6E300A50699 /* ChooseAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAccountViewController.swift; sourceTree = "<group>"; };
+		F4AD06711C25DAEB00A50699 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		F4AD06731C25E17A00A50699 /* AddManualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddManualViewController.swift; sourceTree = "<group>"; };
+		F4AD06751C262A9B00A50699 /* AlmostThereViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlmostThereViewController.swift; sourceTree = "<group>"; };
+		F4FE6B531C0213F6001F96B6 /* ThrottleUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrottleUser.swift; sourceTree = "<group>"; };
+		F4FE6B561C021668001F96B6 /* ThrottleParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThrottleParser.swift; sourceTree = "<group>"; };
+		FAA8F6341C000F48009DC774 /* Throttle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Throttle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA8F6371C000F48009DC774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAA8F63C1C000F48009DC774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAA8F63E1C000F48009DC774 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA8F6411C000F48009DC774 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAA8F6431C000F48009DC774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA8F6481C000F49009DC774 /* ThrottleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThrottleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA8F64C1C000F49009DC774 /* ThrottleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrottleTests.swift; sourceTree = "<group>"; };
+		FAA8F64E1C000F49009DC774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA8F6531C000F49009DC774 /* ThrottleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThrottleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA8F6571C000F49009DC774 /* ThrottleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrottleUITests.swift; sourceTree = "<group>"; };
+		FAA8F6591C000F49009DC774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA8F6681C000FEE009DC774 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FAA8F6691C000FEE009DC774 /* TutorialPageOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageOneViewController.swift; sourceTree = "<group>"; };
+		FAA8F66A1C000FEE009DC774 /* TutorialPageThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageThreeViewController.swift; sourceTree = "<group>"; };
+		FAA8F66B1C000FEE009DC774 /* TutorialPageTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialPageTwoViewController.swift; sourceTree = "<group>"; };
+		FAA8F66C1C000FEE009DC774 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAA8F6311C000F48009DC774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6EA7191CBC2A9A00EF273A /* AWSCognito.framework in Frameworks */,
+				D08562811C9F9FAF008CD77F /* LocalAuthentication.framework in Frameworks */,
+				BCCE32D91C856BBC0026906F /* MessageUI.framework in Frameworks */,
+				574C8E508A7116D84DAC2A79 /* Pods_Throttle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA8F6451C000F49009DC774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA8F6501C000F49009DC774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC090B4E1C8D4433000425BF /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				BC5BE5E91C8A195E004E5490 /* AccountsViewController.swift */,
+				BC090B481C8D3D7B000425BF /* AccountDetailViewController.swift */,
+				BC090B4C1C8D442F000425BF /* EditAccountViewController.swift */,
+				BC090B511C8D6A4E000425BF /* EditsNotSavedViewController.swift */,
+				BC090B521C8D6A4E000425BF /* EditsNotSavedViewController.xib */,
+				BC38A7A21C8E0E8C0081FBE2 /* DeleteAccountViewController.swift */,
+				BC38A7A01C8E0E7F0081FBE2 /* DeleteAccountViewController.xib */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		BC129D1A1C83F90300BE82BC /* About */ = {
+			isa = PBXGroup;
+			children = (
+				BC129D181C83F8FD00BE82BC /* AboutViewController.swift */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		BCAC86511CA754870080B6FB /* Account Settings Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BCAC864B1CA745C90080B6FB /* ChangeEmailServiceTest.swift */,
+				BCAC864F1CA753AA0080B6FB /* ChangePasswordServiceTest.swift */,
+			);
+			name = "Account Settings Tests";
+			sourceTree = "<group>";
+		};
+		BFF2525AD013C49DFF2AC3F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC6EA7181CBC2A9A00EF273A /* AWSCognito.framework */,
+				D08562801C9F9FAF008CD77F /* LocalAuthentication.framework */,
+				BCCE32D81C856BBC0026906F /* MessageUI.framework */,
+				4A5ED78E532F0526DA61126C /* Pods.framework */,
+				A1E48DF232B00F3F41138677 /* Pods_Throttle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D01F2F191CA30C82006DF67D /* BankLogin */ = {
+			isa = PBXGroup;
+			children = (
+				D084A19B1C79158A00496575 /* LogoutService.swift */,
+				D0C02D221C76A53D00765814 /* LoginIntoBankService.swift */,
+				D01F2F0F1CA30519006DF67D /* CheckBankLoginService.swift */,
+				D0F0EA761CA5812000096417 /* LogIntoBankAndKeepCheckingBankLoginService.swift */,
+				D01F2F151CA30B61006DF67D /* GetLastRefreshInfoService.swift */,
+				D0F0EA7A1CA5A30100096417 /* RefreshAllAccountDataService.swift */,
+				D0300A501CAF14070056A7DD /* GetBankLoginFormService.swift */,
+				D08B9A871CB565CE00E58120 /* SendSecurityQuestionAnswersService.swift */,
+				D008777B1CB59194007CB23F /* SaveRefreshDataService.swift */,
+				D008777D1CB59F29007CB23F /* AddManualBankService.swift */,
+				BC4B797F1CCF2E7600F620C0 /* UpdateAccountService.swift */,
+				BC4B79811CCF48AF00F620C0 /* DeleteAccountService.swift */,
+				D0FC0B6C1CFE26D800000239 /* GetAccountDetailsService.swift */,
+			);
+			name = BankLogin;
+			sourceTree = "<group>";
+		};
+		D01F2F1A1CA30C9D006DF67D /* User */ = {
+			isa = PBXGroup;
+			children = (
+				BC8FF32F1C851D73008F6AFA /* ChangeEmailService.swift */,
+				BC8FF3311C851D80008F6AFA /* ChangePasswordService.swift */,
+				D01F2F0B1CA2EA8C006DF67D /* ForgotPasswordService.swift */,
+				917EC7581D83505C003D00E5 /* UpdateMonthlyPaymentService.swift */,
+				917EC75A1D83506F003D00E5 /* GetMonthlyPaymentService.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		D0300A541CAF15130056A7DD /* Bank Login Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D01F2F091CA2E67A006DF67D /* LoginServiceTest.swift */,
+				D05176541C9F1C8D00419291 /* LogIntoBankServiceTest.swift */,
+				D01F2F131CA3081C006DF67D /* CheckBankLoginServiceTest.swift */,
+				D0F0EA7E1CA5A5DD00096417 /* RefreshAllAccountDataServiceTest.swift */,
+				D0300A551CAF153D0056A7DD /* GetBankLoginFormServiceTest.swift */,
+			);
+			name = "Bank Login Tests";
+			sourceTree = "<group>";
+		};
+		D034B41E1C74FA49006C807C /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F6691C000FEE009DC774 /* TutorialPageOneViewController.swift */,
+				FAA8F66A1C000FEE009DC774 /* TutorialPageThreeViewController.swift */,
+				FAA8F66B1C000FEE009DC774 /* TutorialPageTwoViewController.swift */,
+				FAA8F66C1C000FEE009DC774 /* TutorialViewController.swift */,
+			);
+			name = Tutorial;
+			sourceTree = "<group>";
+		};
+		D034B41F1C74FA57006C807C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F6681C000FEE009DC774 /* SignInViewController.swift */,
+				F4AA4C4C1C016685001A5C96 /* SignUpViewController.swift */,
+				D034B4201C74FA9B006C807C /* ForgotPasswordViewController.swift */,
+				D034B4221C7502E8006C807C /* ForgotPasswordCheckEmailViewController.swift */,
+				D01061D21CDA5CAC00EB7DD8 /* InformationViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		D037C6CC1CCDC1D30050A372 /* SavingsPlan */ = {
+			isa = PBXGroup;
+			children = (
+				D037C6CD1CCDC1E70050A372 /* SavingsPlanViewController.swift */,
+				D037C6CF1CCDCD2D0050A372 /* SavingsPlanAccountView.xib */,
+				D037C6D11CCDCF240050A372 /* SavingsPlanAccountView.swift */,
+			);
+			name = SavingsPlan;
+			sourceTree = "<group>";
+		};
+		D03CC0381C7E9F2400A045A4 /* ServiceResults */ = {
+			isa = PBXGroup;
+			children = (
+				D03CC0391C7E9F3B00A045A4 /* BaseResult.swift */,
+				BC5688071C9CE44200ADEF3E /* ChangePasswordResult.swift */,
+				D03CC03B1C7E9F9800A045A4 /* LoginIntoBankResult.swift */,
+				D01F2F111CA30697006DF67D /* CheckBankLoginResult.swift */,
+				D01F2F171CA30BC7006DF67D /* GetLastRefreshInfoResult.swift */,
+				D0F0EA781CA581A400096417 /* KeepCheckingBankLoginResult.swift */,
+				D0F0EA7C1CA5A37900096417 /* RefreshAllAccountDataResult.swift */,
+				D0300A521CAF14800056A7DD /* GetBankLoginFormResult.swift */,
+				D08B9A891CB5667100E58120 /* SendBankSecurityQuestionResult.swift */,
+				D008777F1CB59F88007CB23F /* AddManualBankResult.swift */,
+				D037C6DB1CCE9B090050A372 /* SnowballAvalancheCalculationResult.swift */,
+				D037C6E11CCEA5310050A372 /* GetLoansAndCreditAccountsResult.swift */,
+			);
+			name = ServiceResults;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D03CC0411C7F6EB400A045A4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D03CC0421C7F6ED200A045A4 /* SettingsViewController.swift */,
+				BC129D1B1C841B1B00BE82BC /* AccountSettingsViewController.swift */,
+				BCCE32D41C8530CB0026906F /* NotificationsViewController.swift */,
+				BC129D1D1C84217400BE82BC /* ChangeEmailViewController.swift */,
+				BC8FF32D1C85106D008F6AFA /* ChangePasswordViewController.swift */,
+				BCC7D4021C9FB3A400174929 /* TouchIDTableViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		D03CC0461C7F7DB100A045A4 /* BankSearchAndLogin */ = {
+			isa = PBXGroup;
+			children = (
+				F43F20C51C0413450080BA80 /* WelcomeViewController.swift */,
+				F419F0541C08003900B9B28B /* BankSearchViewController.swift */,
+				F424783D1C1FBBFD00910400 /* BankLoginViewController.swift */,
+				F424783F1C1FD1BB00910400 /* SecurityQuestionViewController.swift */,
+				F4AD066F1C25D6E300A50699 /* ChooseAccountViewController.swift */,
+				F46475101C398B1C005C31B6 /* SuccessViewController.swift */,
+				F464750A1C397FC7005C31B6 /* WrongAnswerViewController.swift */,
+				F464750C1C3980C2005C31B6 /* SomethingWrongViewController.swift */,
+				D037C6CA1CCDB5FA0050A372 /* ImprovePlanViewController.swift */,
+			);
+			name = BankSearchAndLogin;
+			sourceTree = "<group>";
+		};
+		D03CC0471C7F876900A045A4 /* AddManual */ = {
+			isa = PBXGroup;
+			children = (
+				F4AD06731C25E17A00A50699 /* AddManualViewController.swift */,
+				F4AD06751C262A9B00A50699 /* AlmostThereViewController.swift */,
+				F46475061C383BEA005C31B6 /* ConfirmAccountViewController.swift */,
+			);
+			name = AddManual;
+			sourceTree = "<group>";
+		};
+		D05176531C9DF20900419291 /* ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0300A541CAF15130056A7DD /* Bank Login Tests */,
+				BCAC86511CA754870080B6FB /* Account Settings Tests */,
+				D01F2F0D1CA2EBB1006DF67D /* ForgotPasswordServiceTest.swift */,
+				D037C6D71CCE8F400050A372 /* SnowballAvalancheCalculationServiceTest.swift */,
+			);
+			name = ServiceTests;
+			sourceTree = "<group>";
+		};
+		D05176561C9F1D1300419291 /* MockedImplementations */ = {
+			isa = PBXGroup;
+			children = (
+				D05176571C9F1D3D00419291 /* MockedAuth.swift */,
+			);
+			name = MockedImplementations;
+			sourceTree = "<group>";
+		};
+		D05176591C9F41FC00419291 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				D051765B1C9F442000419291 /* RealmUtil.swift */,
+				D03CC0441C7F708900A045A4 /* StoryboardUtil.swift */,
+				F45C05531C0B751900287C57 /* Utils.swift */,
+				D0F982111C80D7D8009712D1 /* Theme.swift */,
+				D072123C1C74D8EC003A7694 /* Config.swift */,
+				D03CC03D1C7F5B6C00A045A4 /* AuthProtocol.swift */,
+				D0C02D241C76B83900765814 /* Auth.swift */,
+				D08562821C9FA2E3008CD77F /* TouchIDAuthenticationUtil.swift */,
+				D037C6D91CCE94FC0050A372 /* NSUserDefaultExtension.swift */,
+				D037C6DD1CCE9C310050A372 /* NSDateExtension.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		D051765A1C9F421700419291 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D03CC03F1C7F6DA900A045A4 /* Settings.storyboard */,
+				BC5BE5E71C8A17E8004E5490 /* Secondary.storyboard */,
+				FAA8F63B1C000F48009DC774 /* Main.storyboard */,
+				FAA8F6401C000F48009DC774 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		D072123E1C74EAD5003A7694 /* UISubClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D072123F1C74EB08003A7694 /* CommonButton.swift */,
+				D00D51C71CA063A3008EEAB4 /* WelcomePlusButton.swift */,
+			);
+			name = UISubClasses;
+			sourceTree = "<group>";
+		};
+		D0DEDBA01C97443D00E600DE /* DBEntities */ = {
+			isa = PBXGroup;
+			children = (
+				D0DEDBA11C97454000E600DE /* UserAccountEntity.swift */,
+			);
+			name = DBEntities;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D0DEDBA51C97690000E600DE /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				D0DEDBA61C97692600E600DE /* DashboardCard.xib */,
+				D0DEDBA81C97694D00E600DE /* DashboardCard.swift */,
+			);
+			name = Nibs;
+			sourceTree = "<group>";
+		};
+		D0F0EA801CA5A68100096417 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D0F0EA811CA5A69400096417 /* LoginHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		F43F20C71C0416620080BA80 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F43F20C81C04167B0080BA80 /* NSError+Domains.swift */,
+				D0DEDBA31C975F1C00E600DE /* IntExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F45C055B1C0BEAD500287C57 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BCA0A80F1C92020E00335114 /* MonthCollectionViewCell.swift */,
+				BC090B4F1C8D44DB000425BF /* EditDebtTableViewCell.swift */,
+				BCC7D4041C9FB6C200174929 /* TouchIDSettingTableViewCell.swift */,
+				F45C055C1C0BEAF000287C57 /* BankSearchCollectionViewCell.swift */,
+				BC5BE5EB1C8A20A5004E5490 /* DebtsTableViewCell.swift */,
+				F4A986211C399693001C4AB0 /* AwesomenessTableViewCell.swift */,
+				D0C02D1E1C765A5500765814 /* CustomHomeCollectionViewFlowLayout.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		F4AA4C541C017BCD001A5C96 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F4AA4C551C017BCD001A5C96 /* ThrottleCommunicationsManager.swift */,
+				D03CC0361C7E9CE600A045A4 /* BaseService.swift */,
+				D01F2F191CA30C82006DF67D /* BankLogin */,
+				D01F2F1A1CA30C9D006DF67D /* User */,
+				BCC7D4001C9FB22500174929 /* SettingsService.swift */,
+				BCA659ED1CBF1A9100A3F7C5 /* NotificationsService.swift */,
+				D037C6D31CCE8C750050A372 /* SnowballAvalancheCalculationService.swift */,
+				D037C6DF1CCEA4C40050A372 /* GetLoanAndCreditAccountsService.swift */,
+			);
+			name = Services;
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F4FE6B501C021388001F96B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D0DEDBA01C97443D00E600DE /* DBEntities */,
+				F4FE6B531C0213F6001F96B6 /* ThrottleUser.swift */,
+				F419F0561C0802F400B9B28B /* Bank.swift */,
+				F4AD06711C25DAEB00A50699 /* Account.swift */,
+				BCCE32D21C852EF70026906F /* SettingsData.swift */,
+				F46475081C38465B005C31B6 /* AppData.swift */,
+				BC090B4A1C8D4248000425BF /* AccountsData.swift */,
+				D0EA24461C8D04D9007C1D3E /* ManualLoanInfo.swift */,
+				D08562841C9FAD59008CD77F /* AuthenticatedUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4FE6B551C021640001F96B6 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE6B561C021668001F96B6 /* ThrottleParser.swift */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		FAA8F62B1C000F48009DC774 = {
+			isa = PBXGroup;
+			children = (
+				D072123A1C74325E003A7694 /* Podfile */,
+				FAA8F6361C000F48009DC774 /* Throttle */,
+				FAA8F64B1C000F49009DC774 /* ThrottleTests */,
+				FAA8F6561C000F49009DC774 /* ThrottleUITests */,
+				FAA8F6351C000F48009DC774 /* Products */,
+				BFF2525AD013C49DFF2AC3F3 /* Frameworks */,
+				FF25D890F90C8FB4475B6CDE /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FAA8F6351C000F48009DC774 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F6341C000F48009DC774 /* Throttle.app */,
+				FAA8F6481C000F49009DC774 /* ThrottleTests.xctest */,
+				FAA8F6531C000F49009DC774 /* ThrottleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAA8F6361C000F48009DC774 /* Throttle */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F6371C000F48009DC774 /* AppDelegate.swift */,
+				D051765A1C9F421700419291 /* Storyboards */,
+				D05176591C9F41FC00419291 /* Util */,
+				D0DEDBA51C97690000E600DE /* Nibs */,
+				D072123E1C74EAD5003A7694 /* UISubClasses */,
+				F43F20C71C0416620080BA80 /* Extensions */,
+				F4FE6B551C021640001F96B6 /* Parsers */,
+				F4FE6B501C021388001F96B6 /* Models */,
+				F4AA4C541C017BCD001A5C96 /* Services */,
+				D03CC0381C7E9F2400A045A4 /* ServiceResults */,
+				FAA8F6671C000FEE009DC774 /* ViewControllers */,
+				F45C055B1C0BEAD500287C57 /* Custom Cells */,
+				FAA8F63E1C000F48009DC774 /* Assets.xcassets */,
+				FAA8F6431C000F48009DC774 /* Info.plist */,
+				F419F0581C080CCB00B9B28B /* KohinoorBangla.ttc */,
+				BC6EA71B1CBC2BB900EF273A /* Throttle-Bridging-Header.h */,
+			);
+			path = Throttle;
+			sourceTree = "<group>";
+		};
+		FAA8F64B1C000F49009DC774 /* ThrottleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0F0EA801CA5A68100096417 /* Helpers */,
+				D05176561C9F1D1300419291 /* MockedImplementations */,
+				D05176531C9DF20900419291 /* ServiceTests */,
+				FAA8F64C1C000F49009DC774 /* ThrottleTests.swift */,
+				FAA8F64E1C000F49009DC774 /* Info.plist */,
+			);
+			path = ThrottleTests;
+			sourceTree = "<group>";
+		};
+		FAA8F6561C000F49009DC774 /* ThrottleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAA8F6571C000F49009DC774 /* ThrottleUITests.swift */,
+				FAA8F6591C000F49009DC774 /* Info.plist */,
+			);
+			path = ThrottleUITests;
+			sourceTree = "<group>";
+		};
+		FAA8F6671C000FEE009DC774 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D0C02D201C7683F400765814 /* BaseViewController.swift */,
+				D037C6CC1CCDC1D30050A372 /* SavingsPlan */,
+				D034B41E1C74FA49006C807C /* Tutorial */,
+				D034B41F1C74FA57006C807C /* Login */,
+				D03CC0461C7F7DB100A045A4 /* BankSearchAndLogin */,
+				D03CC0471C7F876900A045A4 /* AddManual */,
+				D03CC0411C7F6EB400A045A4 /* Settings */,
+				BC129D1A1C83F90300BE82BC /* About */,
+				BC090B4E1C8D4433000425BF /* Account */,
+				D0C02D261C76CAE900765814 /* ITRLeftMenuController.swift */,
+				BC04E8191C90EE6A0024BCC8 /* CalendarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FF25D890F90C8FB4475B6CDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5829EA064E3946D60FCFDC7 /* Pods-Throttle.debug.xcconfig */,
+				2433903C6643D358BFA27288 /* Pods-Throttle.debug gigster.xcconfig */,
+				975364DF6116F33ABFFA3080 /* Pods-Throttle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAA8F6331C000F48009DC774 /* Throttle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA8F65C1C000F49009DC774 /* Build configuration list for PBXNativeTarget "Throttle" */;
+			buildPhases = (
+				204906FDDC221BBB6001ED60 /* [CP] Check Pods Manifest.lock */,
+				FAA8F6301C000F48009DC774 /* Sources */,
+				FAA8F6311C000F48009DC774 /* Frameworks */,
+				FAA8F6321C000F48009DC774 /* Resources */,
+				F40D069E1C263402000256D8 /* ShellScript */,
+				5F7A43589D37B6868F1A2E5B /* [CP] Embed Pods Frameworks */,
+				E07413343828229082DCEBD3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Throttle;
+			productName = Throttle;
+			productReference = FAA8F6341C000F48009DC774 /* Throttle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAA8F6471C000F49009DC774 /* ThrottleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA8F65F1C000F49009DC774 /* Build configuration list for PBXNativeTarget "ThrottleTests" */;
+			buildPhases = (
+				FAA8F6441C000F49009DC774 /* Sources */,
+				FAA8F6451C000F49009DC774 /* Frameworks */,
+				FAA8F6461C000F49009DC774 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA8F64A1C000F49009DC774 /* PBXTargetDependency */,
+			);
+			name = ThrottleTests;
+			productName = ThrottleTests;
+			productReference = FAA8F6481C000F49009DC774 /* ThrottleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAA8F6521C000F49009DC774 /* ThrottleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA8F6621C000F49009DC774 /* Build configuration list for PBXNativeTarget "ThrottleUITests" */;
+			buildPhases = (
+				FAA8F64F1C000F49009DC774 /* Sources */,
+				FAA8F6501C000F49009DC774 /* Frameworks */,
+				FAA8F6511C000F49009DC774 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAA8F6551C000F49009DC774 /* PBXTargetDependency */,
+			);
+			name = ThrottleUITests;
+			productName = ThrottleUITests;
+			productReference = FAA8F6531C000F49009DC774 /* ThrottleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAA8F62C1C000F48009DC774 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Gigster;
+				TargetAttributes = {
+					FAA8F6331C000F48009DC774 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = MY599KZ8MZ;
+					};
+					FAA8F6471C000F49009DC774 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = FAA8F6331C000F48009DC774;
+					};
+					FAA8F6521C000F49009DC774 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = FAA8F6331C000F48009DC774;
+					};
+				};
+			};
+			buildConfigurationList = FAA8F62F1C000F48009DC774 /* Build configuration list for PBXProject "Throttle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAA8F62B1C000F48009DC774;
+			productRefGroup = FAA8F6351C000F48009DC774 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAA8F6331C000F48009DC774 /* Throttle */,
+				FAA8F6471C000F49009DC774 /* ThrottleTests */,
+				FAA8F6521C000F49009DC774 /* ThrottleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAA8F6321C000F48009DC774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D072123B1C74325E003A7694 /* Podfile in Resources */,
+				D03CC0401C7F6DA900A045A4 /* Settings.storyboard in Resources */,
+				F419F0591C080CCB00B9B28B /* KohinoorBangla.ttc in Resources */,
+				BC5BE5E81C8A17E8004E5490 /* Secondary.storyboard in Resources */,
+				BC38A7A11C8E0E7F0081FBE2 /* DeleteAccountViewController.xib in Resources */,
+				BC090B541C8D6A4E000425BF /* EditsNotSavedViewController.xib in Resources */,
+				D0DEDBA71C97692600E600DE /* DashboardCard.xib in Resources */,
+				FAA8F6421C000F48009DC774 /* LaunchScreen.storyboard in Resources */,
+				D037C6D01CCDCD2D0050A372 /* SavingsPlanAccountView.xib in Resources */,
+				FAA8F63F1C000F48009DC774 /* Assets.xcassets in Resources */,
+				FAA8F63D1C000F48009DC774 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA8F6461C000F49009DC774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA8F6511C000F49009DC774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		204906FDDC221BBB6001ED60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F7A43589D37B6868F1A2E5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Throttle/Pods-Throttle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E07413343828229082DCEBD3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Throttle/Pods-Throttle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F40D069E1C263402000256D8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 85e2b9b95779c96ec5d4e987d5b6dc3f81664127 1dfcc6cfd5257a9857e73a1b8c04625da9015f5285afef69673e0b7f3ed2ae03";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAA8F6301C000F48009DC774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D08B9A881CB565CE00E58120 /* SendSecurityQuestionAnswersService.swift in Sources */,
+				F4AA4C561C017BCD001A5C96 /* ThrottleCommunicationsManager.swift in Sources */,
+				F45C055D1C0BEAF000287C57 /* BankSearchCollectionViewCell.swift in Sources */,
+				BC090B4B1C8D4248000425BF /* AccountsData.swift in Sources */,
+				D037C6D21CCDCF240050A372 /* SavingsPlanAccountView.swift in Sources */,
+				BC090B531C8D6A4E000425BF /* EditsNotSavedViewController.swift in Sources */,
+				D08562851C9FAD59008CD77F /* AuthenticatedUser.swift in Sources */,
+				D034B4211C74FA9B006C807C /* ForgotPasswordViewController.swift in Sources */,
+				BC5688081C9CE44200ADEF3E /* ChangePasswordResult.swift in Sources */,
+				D01F2F181CA30BC7006DF67D /* GetLastRefreshInfoResult.swift in Sources */,
+				D01F2F121CA30697006DF67D /* CheckBankLoginResult.swift in Sources */,
+				D0F0EA7B1CA5A30100096417 /* RefreshAllAccountDataService.swift in Sources */,
+				D0F982121C80D7D8009712D1 /* Theme.swift in Sources */,
+				BCC7D4051C9FB6C200174929 /* TouchIDSettingTableViewCell.swift in Sources */,
+				D072123D1C74D8EC003A7694 /* Config.swift in Sources */,
+				D00877801CB59F88007CB23F /* AddManualBankResult.swift in Sources */,
+				BC090B501C8D44DB000425BF /* EditDebtTableViewCell.swift in Sources */,
+				D037C6E01CCEA4C40050A372 /* GetLoanAndCreditAccountsService.swift in Sources */,
+				BC4B79821CCF48AF00F620C0 /* DeleteAccountService.swift in Sources */,
+				BC38A7A31C8E0E8C0081FBE2 /* DeleteAccountViewController.swift in Sources */,
+				D051765C1C9F442000419291 /* RealmUtil.swift in Sources */,
+				D08562831C9FA2E3008CD77F /* TouchIDAuthenticationUtil.swift in Sources */,
+				F464750B1C397FC7005C31B6 /* WrongAnswerViewController.swift in Sources */,
+				D0C02D251C76B83900765814 /* Auth.swift in Sources */,
+				D01F2F0C1CA2EA8C006DF67D /* ForgotPasswordService.swift in Sources */,
+				BC090B4D1C8D442F000425BF /* EditAccountViewController.swift in Sources */,
+				D0C02D211C7683F400765814 /* BaseViewController.swift in Sources */,
+				FAA8F6701C000FEE009DC774 /* TutorialPageTwoViewController.swift in Sources */,
+				917EC75B1D83506F003D00E5 /* GetMonthlyPaymentService.swift in Sources */,
+				D0C02D271C76CAE900765814 /* ITRLeftMenuController.swift in Sources */,
+				BCC7D4011C9FB22500174929 /* SettingsService.swift in Sources */,
+				F46475071C383BEA005C31B6 /* ConfirmAccountViewController.swift in Sources */,
+				D008777E1CB59F29007CB23F /* AddManualBankService.swift in Sources */,
+				BC04E81A1C90EE6A0024BCC8 /* CalendarViewController.swift in Sources */,
+				D01F2F101CA30519006DF67D /* CheckBankLoginService.swift in Sources */,
+				BCCE32D31C852EF70026906F /* SettingsData.swift in Sources */,
+				F46475091C38465B005C31B6 /* AppData.swift in Sources */,
+				BC090B491C8D3D7B000425BF /* AccountDetailViewController.swift in Sources */,
+				F43F20C61C0413450080BA80 /* WelcomeViewController.swift in Sources */,
+				F424783E1C1FBBFD00910400 /* BankLoginViewController.swift in Sources */,
+				D01061D31CDA5CAC00EB7DD8 /* InformationViewController.swift in Sources */,
+				F4AA4C4D1C016685001A5C96 /* SignUpViewController.swift in Sources */,
+				FAA8F66F1C000FEE009DC774 /* TutorialPageThreeViewController.swift in Sources */,
+				F45C05541C0B751900287C57 /* Utils.swift in Sources */,
+				F4FE6B571C021668001F96B6 /* ThrottleParser.swift in Sources */,
+				D037C6D41CCE8C750050A372 /* SnowballAvalancheCalculationService.swift in Sources */,
+				D03CC03A1C7E9F3B00A045A4 /* BaseResult.swift in Sources */,
+				D0F0EA7D1CA5A37900096417 /* RefreshAllAccountDataResult.swift in Sources */,
+				D0C02D231C76A53D00765814 /* LoginIntoBankService.swift in Sources */,
+				D037C6DA1CCE94FC0050A372 /* NSUserDefaultExtension.swift in Sources */,
+				D0DEDBA91C97694D00E600DE /* DashboardCard.swift in Sources */,
+				D03CC03E1C7F5B6C00A045A4 /* AuthProtocol.swift in Sources */,
+				D01F2F161CA30B61006DF67D /* GetLastRefreshInfoService.swift in Sources */,
+				D0F0EA791CA581A400096417 /* KeepCheckingBankLoginResult.swift in Sources */,
+				BCC7D4031C9FB3A400174929 /* TouchIDTableViewController.swift in Sources */,
+				F4AD06761C262A9B00A50699 /* AlmostThereViewController.swift in Sources */,
+				FAA8F66D1C000FEE009DC774 /* SignInViewController.swift in Sources */,
+				BCA0A8101C92020E00335114 /* MonthCollectionViewCell.swift in Sources */,
+				FAA8F6381C000F48009DC774 /* AppDelegate.swift in Sources */,
+				D0DEDBA41C975F1C00E600DE /* IntExtension.swift in Sources */,
+				F419F0551C08003900B9B28B /* BankSearchViewController.swift in Sources */,
+				BC4B79801CCF2E7600F620C0 /* UpdateAccountService.swift in Sources */,
+				917EC7591D83505C003D00E5 /* UpdateMonthlyPaymentService.swift in Sources */,
+				BC129D191C83F8FD00BE82BC /* AboutViewController.swift in Sources */,
+				D03CC03C1C7E9F9800A045A4 /* LoginIntoBankResult.swift in Sources */,
+				D00D51C81CA063A3008EEAB4 /* WelcomePlusButton.swift in Sources */,
+				D034B4231C7502E8006C807C /* ForgotPasswordCheckEmailViewController.swift in Sources */,
+				D0300A511CAF14070056A7DD /* GetBankLoginFormService.swift in Sources */,
+				D0DEDBA21C97454000E600DE /* UserAccountEntity.swift in Sources */,
+				D0300A531CAF14800056A7DD /* GetBankLoginFormResult.swift in Sources */,
+				F42478401C1FD1BB00910400 /* SecurityQuestionViewController.swift in Sources */,
+				D03CC0451C7F708900A045A4 /* StoryboardUtil.swift in Sources */,
+				BC5BE5EA1C8A195E004E5490 /* AccountsViewController.swift in Sources */,
+				BC5BE5EC1C8A20A5004E5490 /* DebtsTableViewCell.swift in Sources */,
+				D0C02D1F1C765A5500765814 /* CustomHomeCollectionViewFlowLayout.swift in Sources */,
+				D084A19C1C79158A00496575 /* LogoutService.swift in Sources */,
+				D07212401C74EB08003A7694 /* CommonButton.swift in Sources */,
+				FAA8F6711C000FEE009DC774 /* TutorialViewController.swift in Sources */,
+				D03CC0371C7E9CE600A045A4 /* BaseService.swift in Sources */,
+				BC129D1C1C841B1B00BE82BC /* AccountSettingsViewController.swift in Sources */,
+				BC8FF3321C851D80008F6AFA /* ChangePasswordService.swift in Sources */,
+				F4A986221C399693001C4AB0 /* AwesomenessTableViewCell.swift in Sources */,
+				D0F0EA771CA5812000096417 /* LogIntoBankAndKeepCheckingBankLoginService.swift in Sources */,
+				F4AD06741C25E17A00A50699 /* AddManualViewController.swift in Sources */,
+				D0FC0B6D1CFE26D800000239 /* GetAccountDetailsService.swift in Sources */,
+				D0EA24471C8D04D9007C1D3E /* ManualLoanInfo.swift in Sources */,
+				BC8FF3301C851D73008F6AFA /* ChangeEmailService.swift in Sources */,
+				F43F20C91C04167B0080BA80 /* NSError+Domains.swift in Sources */,
+				D03CC0431C7F6ED200A045A4 /* SettingsViewController.swift in Sources */,
+				D037C6DC1CCE9B090050A372 /* SnowballAvalancheCalculationResult.swift in Sources */,
+				F4FE6B541C0213F6001F96B6 /* ThrottleUser.swift in Sources */,
+				F464750D1C3980C2005C31B6 /* SomethingWrongViewController.swift in Sources */,
+				BCCE32D51C8530CB0026906F /* NotificationsViewController.swift in Sources */,
+				BC8FF32E1C85106D008F6AFA /* ChangePasswordViewController.swift in Sources */,
+				BC129D1E1C84217400BE82BC /* ChangeEmailViewController.swift in Sources */,
+				D008777C1CB59194007CB23F /* SaveRefreshDataService.swift in Sources */,
+				F46475111C398B1C005C31B6 /* SuccessViewController.swift in Sources */,
+				D037C6CB1CCDB5FA0050A372 /* ImprovePlanViewController.swift in Sources */,
+				D037C6CE1CCDC1E70050A372 /* SavingsPlanViewController.swift in Sources */,
+				FAA8F66E1C000FEE009DC774 /* TutorialPageOneViewController.swift in Sources */,
+				D08B9A8A1CB5667100E58120 /* SendBankSecurityQuestionResult.swift in Sources */,
+				F419F0571C0802F400B9B28B /* Bank.swift in Sources */,
+				BCA659EE1CBF1A9100A3F7C5 /* NotificationsService.swift in Sources */,
+				D037C6E21CCEA5310050A372 /* GetLoansAndCreditAccountsResult.swift in Sources */,
+				D037C6DE1CCE9C310050A372 /* NSDateExtension.swift in Sources */,
+				F4AD06701C25D6E300A50699 /* ChooseAccountViewController.swift in Sources */,
+				F4AD06721C25DAEB00A50699 /* Account.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA8F6441C000F49009DC774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCAC86501CA753AA0080B6FB /* ChangePasswordServiceTest.swift in Sources */,
+				D037C6D81CCE8F400050A372 /* SnowballAvalancheCalculationServiceTest.swift in Sources */,
+				D0F0EA7F1CA5A5DD00096417 /* RefreshAllAccountDataServiceTest.swift in Sources */,
+				D05176551C9F1C8D00419291 /* LogIntoBankServiceTest.swift in Sources */,
+				D05176581C9F1D3D00419291 /* MockedAuth.swift in Sources */,
+				FAA8F64D1C000F49009DC774 /* ThrottleTests.swift in Sources */,
+				D0300A561CAF153D0056A7DD /* GetBankLoginFormServiceTest.swift in Sources */,
+				D01F2F0A1CA2E67A006DF67D /* LoginServiceTest.swift in Sources */,
+				D0F0EA821CA5A69400096417 /* LoginHelper.swift in Sources */,
+				D01F2F141CA3081C006DF67D /* CheckBankLoginServiceTest.swift in Sources */,
+				D01F2F0E1CA2EBB1006DF67D /* ForgotPasswordServiceTest.swift in Sources */,
+				BCAC864C1CA745C90080B6FB /* ChangeEmailServiceTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAA8F64F1C000F49009DC774 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA8F6581C000F49009DC774 /* ThrottleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAA8F64A1C000F49009DC774 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA8F6331C000F48009DC774 /* Throttle */;
+			targetProxy = FAA8F6491C000F49009DC774 /* PBXContainerItemProxy */;
+		};
+		FAA8F6551C000F49009DC774 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAA8F6331C000F48009DC774 /* Throttle */;
+			targetProxy = FAA8F6541C000F49009DC774 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAA8F63B1C000F48009DC774 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA8F63C1C000F48009DC774 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAA8F6401C000F48009DC774 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAA8F6411C000F48009DC774 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F43F20CA1C0428400080BA80 /* Debug Gigster */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Gigster";
+		};
+		F43F20CB1C0428400080BA80 /* Debug Gigster */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2433903C6643D358BFA27288 /* Pods-Throttle.debug gigster.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MY599KZ8MZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = Throttle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.throttle.iosapp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Throttle/Throttle-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = "Debug Gigster";
+		};
+		F43F20CC1C0428400080BA80 /* Debug Gigster */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ThrottleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigster.ThrottleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Throttle.app/Throttle";
+			};
+			name = "Debug Gigster";
+		};
+		F43F20CD1C0428400080BA80 /* Debug Gigster */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				INFOPLIST_FILE = ThrottleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigster.ThrottleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = Throttle;
+				USES_XCTRUNNER = YES;
+			};
+			name = "Debug Gigster";
+		};
+		FAA8F65A1C000F49009DC774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAA8F65B1C000F49009DC774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAA8F65D1C000F49009DC774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5829EA064E3946D60FCFDC7 /* Pods-Throttle.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MY599KZ8MZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = Throttle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.throttle.iosapp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Throttle/Throttle-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		FAA8F65E1C000F49009DC774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 975364DF6116F33ABFFA3080 /* Pods-Throttle.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MY599KZ8MZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = Throttle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.throttle.iosapp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Throttle/Throttle-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+		FAA8F6601C000F49009DC774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ThrottleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigster.ThrottleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Throttle.app/Throttle";
+			};
+			name = Debug;
+		};
+		FAA8F6611C000F49009DC774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ThrottleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigster.ThrottleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Throttle.app/Throttle";
+			};
+			name = Release;
+		};
+		FAA8F6631C000F49009DC774 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				INFOPLIST_FILE = ThrottleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigster.ThrottleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = Throttle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FAA8F6641C000F49009DC774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				INFOPLIST_FILE = ThrottleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigster.ThrottleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+				TEST_TARGET_NAME = Throttle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAA8F62F1C000F48009DC774 /* Build configuration list for PBXProject "Throttle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA8F65A1C000F49009DC774 /* Debug */,
+				F43F20CA1C0428400080BA80 /* Debug Gigster */,
+				FAA8F65B1C000F49009DC774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA8F65C1C000F49009DC774 /* Build configuration list for PBXNativeTarget "Throttle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA8F65D1C000F49009DC774 /* Debug */,
+				F43F20CB1C0428400080BA80 /* Debug Gigster */,
+				FAA8F65E1C000F49009DC774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA8F65F1C000F49009DC774 /* Build configuration list for PBXNativeTarget "ThrottleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA8F6601C000F49009DC774 /* Debug */,
+				F43F20CC1C0428400080BA80 /* Debug Gigster */,
+				FAA8F6611C000F49009DC774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA8F6621C000F49009DC774 /* Build configuration list for PBXNativeTarget "ThrottleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA8F6631C000F49009DC774 /* Debug */,
+				F43F20CD1C0428400080BA80 /* Debug Gigster */,
+				FAA8F6641C000F49009DC774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAA8F62C1C000F48009DC774 /* Project object */;
+}

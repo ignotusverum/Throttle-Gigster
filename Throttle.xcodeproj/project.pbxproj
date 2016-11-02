@@ -830,7 +830,7 @@
 				TargetAttributes = {
 					FAA8F6331C000F48009DC774 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = MY599KZ8MZ;
+						ProvisioningStyle = Manual;
 					};
 					FAA8F6471C000F49009DC774 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -1184,18 +1184,18 @@
 			baseConfigurationReference = 2433903C6643D358BFA27288 /* Pods-Throttle.debug gigster.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = MY599KZ8MZ;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vladislav Zagordnyuk (44WNA6X5Y8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vladislav Zagordnyuk (44WNA6X5Y8)";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Throttle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.throttle.iosapp2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.throttle.gigster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "68318a1b-2c0e-4bd9-ace5-24598a6f6d99";
 				SWIFT_OBJC_BRIDGING_HEADER = "Throttle/Throttle-Bridging-Header.h";
 				SWIFT_VERSION = 2.3;
 			};
@@ -1314,18 +1314,18 @@
 			baseConfigurationReference = B5829EA064E3946D60FCFDC7 /* Pods-Throttle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = MY599KZ8MZ;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vladislav Zagordnyuk (44WNA6X5Y8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vladislav Zagordnyuk (44WNA6X5Y8)";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Throttle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.throttle.iosapp2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.throttle.gigster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "68318a1b-2c0e-4bd9-ace5-24598a6f6d99";
 				SWIFT_OBJC_BRIDGING_HEADER = "Throttle/Throttle-Bridging-Header.h";
 				SWIFT_VERSION = 2.3;
 			};
@@ -1336,18 +1336,18 @@
 			baseConfigurationReference = 975364DF6116F33ABFFA3080 /* Pods-Throttle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = MY599KZ8MZ;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Vladislav Zagordnyuk (44WNA6X5Y8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Vladislav Zagordnyuk (44WNA6X5Y8)";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Throttle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.throttle.iosapp2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.throttle.gigster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "68318a1b-2c0e-4bd9-ace5-24598a6f6d99";
 				SWIFT_OBJC_BRIDGING_HEADER = "Throttle/Throttle-Bridging-Header.h";
 				SWIFT_VERSION = 2.3;
 			};
